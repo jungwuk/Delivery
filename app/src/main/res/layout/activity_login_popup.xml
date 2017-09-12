@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#CC000000"
+    android:orientation="vertical">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <LinearLayout
+            android:layout_width="300dp"
+            android:layout_height="350dp"
+            android:layout_marginBottom="25dp"
+            android:layout_gravity="center_horizontal|center_vertical"
+            android:background="#fafafa"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#FFF"
+                android:padding="15dp">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="36dp"
+                    android:scaleType="centerInside"
+                    android:layout_marginRight="15dp"
+                    android:src="@drawable/main_logo2" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:background="#E0E0E0"
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                >
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="43dp"
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="10dp"
+                android:gravity="center_horizontal|center_vertical"
+                android:padding="10dp"
+                android:text="배송차량 로그인"
+                android:textColor="#888888"
+                android:textSize="13dp"
+                android:textStyle="bold" />
+
+            <!--에딧 박스의 백그라운드를 로그인_박스 로 변경-->
+
+            <EditText
+                android:id="@+id/login_user_id"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginLeft="20dp"
+                android:background="@drawable/login_box"
+                android:hint="아이디"
+                android:maxLines="1"
+                android:textSize="15dp" />
+
+
+            <EditText
+                android:id="@+id/login_user_passwd"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginLeft="20dp"
+                android:background="@drawable/login_box"
+                android:hint="비밀번호"
+                android:inputType="textPassword"
+                android:maxLines="1"
+                android:textSize="15dp" />
+
+            <CheckBox
+                android:id="@+id/login_save_login"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="2dp"
+                android:text="로그인상태 유지"
+                android:textSize="13dp" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+
+                    >
+
+                    <Button
+                        android:id="@+id/login_login_btn"
+                        android:layout_width="match_parent"
+                        android:layout_height="55dp"
+                        android:background="#0BD438"
+                        android:paddingBottom="0dp"
+                        android:paddingTop="0dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginRight="20dp"
+                        android:layout_marginLeft="20dp"
+                        android:text="로그인"
+                        android:textColor="#FFF"
+                        android:textSize="20dp"
+                        android:textStyle="bold" />
+                </LinearLayout>
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+    </FrameLayout>
+
+</RelativeLayout>

@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "408642725113",
+    "firebase_url": "https://feedpia-delivery.firebaseio.com",
+    "project_id": "feedpia-delivery",
+    "storage_bucket": "feedpia-delivery.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:408642725113:android:7eaabd2312107cfc",
+        "android_client_info": {
+          "package_name": "com.pidpia.delivery"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "408642725113-manj0qh5tfa045rissjjmouvl70m2kpn.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB76ExPKabgOlVLfc-Yi54LhV3OQPQlGnM"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

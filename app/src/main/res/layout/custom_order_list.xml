@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <!--
+        여기는 색깔과 간격 위주로 바뀜
+        -->
+    <LinearLayout
+        android:id="@+id/list_title_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#212121"
+        android:orientation="horizontal"
+        android:padding="10dp">
+
+        <TextView
+            android:id="@+id/list_title_bar_msg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="배송중인목록(3)"
+            android:textColor="#FFF" />
+
+
+        <TextView
+            android:id="@+id/list_title_bar_option"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:textColor="#FFF" />
+
+    </LinearLayout>
+
+    <FrameLayout
+        android:id="@+id/list_order_order_row"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="15dp"
+        android:layout_marginTop="15dp"
+        android:paddingLeft="15dp"
+        android:orientation="horizontal"
+        android:background="#FFF">
+
+        <ImageView
+            android:id="@+id/list_order_icon"
+            android:layout_width="54dp"
+            android:layout_height="54dp"
+            android:src="@drawable/green_one"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/list_order_icon_text"
+            android:layout_width="54dp"
+            android:layout_height="54dp"
+            android:gravity="center_horizontal|center_vertical"
+            android:textSize="12dp"
+            android:textStyle="bold" />
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="70dp"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginBottom="5dp">
+
+                <TextView
+                    android:id="@+id/list_order_brand_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="5dp"
+                    android:textColor="#00B136"
+                    android:textStyle="bold"
+                    android:textSize="15dp"/>
+
+
+                <TextView
+                    android:id="@+id/list_order_order_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="#555555"
+                    android:maxLines="1"
+                    android:textSize="15dp"/>
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="배송지 : "
+                    android:textColor="#8a8a8a"
+                    android:textSize="11dp"/>
+
+
+                <TextView
+                    android:id="@+id/list_order_order_address"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:maxLines="1"
+                    android:textColor="#666"
+                    android:textSize="11dp"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="배송요청일자 : "
+                    android:textColor="#8a8a8a"
+                    android:textSize="11dp"/>
+
+
+                <TextView
+                    android:id="@+id/list_order_order_request"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:maxLength="16"
+                    android:textColor="#2b84c3"
+                    android:textSize="11dp"/>
+
+            </LinearLayout>
+        </LinearLayout>
+        <!-- 우측 하얀색 화살표 주석 제거
+                <ImageView
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_gravity="right|center_vertical"
+                    android:scaleType="centerInside"
+                    android:src="@drawable/blue_arrow" />
+                -->
+    </FrameLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="#E0E0E0" />
+</LinearLayout>
