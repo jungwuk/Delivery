@@ -113,7 +113,7 @@ public class DetailActivity extends AppCompatActivity {
 
                         user.setData("delivery_state", String.valueOf(status.getInt("order_status")));
 //                        delivery_title_name.setText(status.getString("title_name"));
-                        delivery_brand_name.setText(status.getString("brand_name"));
+                        delivery_brand_name.setText(status.getString("brand111111_name"));
                         delivery_order_name.setText(status.getString("order_name"));
 //                        delivery_start_point.setText(status.getString(""));
                         delivery_end_point.setText(status.getString("end_point"));
